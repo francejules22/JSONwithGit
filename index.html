@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    
+    <script>
+        let companies =
+`[
+    {
+        "name": "Big Corporation",
+        "numberOfEmployees" : 10000,
+        "ceo" : "Jose",
+        "rating" : 5.5
+    },
+    {
+        "name": "Small StartUp",
+        "numberOfEmployees" : 100,
+        "ceo" : null,
+        "rating" : 5.0
+    }
+]`
+//Use back tick to see the code in string in console
+//console.log(companies);
+
+//If you want  to see Javascript Object user JSON.parse
+// console.log(JSON.parse(companies)[0].name); //Big Corporation
+// console.log(JSON.parse(companies)[1].name); //SmallStartUp
+// console.log(JSON.parse(companies)[1].rating); //5.0
+// console.log(JSON.parse(companies)[0].ceo); //Jose
+console.log(JSON.parse(companies));
+
+    </script>
+</body>
+</html>
